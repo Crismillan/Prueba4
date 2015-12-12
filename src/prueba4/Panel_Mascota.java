@@ -94,7 +94,7 @@ public class Panel_Mascota extends JPanel {
         OyenteEditar oEditar=new OyenteEditar();
         btnEditar.addActionListener(oEditar);
         
-        llenarTabla();
+      /*  llenarTabla(); */
         
     }
 
@@ -142,6 +142,16 @@ public class Panel_Mascota extends JPanel {
         }
     }
     
+   /*   class OyenteBuscar implements ActionListener{
+        public void actionPerformed(ActionEvent e){
+            Mascotas mas=new Mascotas();
+            String nom = txtNombre.getText();
+            mas.setNombre(nom);
+            mas.buscar();
+            Limpiar();
+            llenarTabla();
+        }
+    } */
     
     
     class OyenteEditar implements ActionListener{
@@ -182,10 +192,22 @@ public class Panel_Mascota extends JPanel {
             modelo.addRow(list);
             
         }
+    } 
+   /*   public void MostrarResult(){
+      modelo.setRowCount(0);
+        Mascotas mas=new Mascotas();
+        List<Mascotas> lista=mas.list();
+      
+       Object[] list=new Object[3];
+        for(int i=0;i<lista.size();i++){
+            list[1]=""+lista.get(i).getNombre();
+            list[3]=""+lista.get(i).getId_raza();
+          modelo.addRow(list);
         
-    }
+        
+        } */ 
     
+      } 
     
-    
-    
-}
+
+

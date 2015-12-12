@@ -71,6 +71,15 @@ public class Mascotas {
         con.setEjecutar("update Mascotas set nombre='" + this.nombre + "',peso='"+this.peso+"',id_raza='" + this.id_raza+"' where  id_mascota='" + this.id_mascota + "'");
     }
     
+   /* public void buscar(){
+    
+    con.setEjecutar("select * from `mascotas` where `nombre` like '%'"+nombre+"'% ' ");
+    
+    } */
+    
+    
+    
+    
 
 public List list(){
         List<Mascotas> lista=new ArrayList<Mascotas>();
