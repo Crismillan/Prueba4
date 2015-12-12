@@ -60,7 +60,7 @@ public class Mascotas {
     }
 
    public void save() {
-        con.setEjecutar("insert into Mascotas(id_mascota,nombre,peso,id_raza) values('" + this.id_mascota + "','" + this.nombre + "','" +this.peso+"','"+this.id_raza+"')");
+        con.setEjecutar("insert into Mascotas(nombre,peso,id_raza) values('" + this.nombre + "','" +this.peso+"','"+this.id_raza+"')");
     }
 
     public void delete() {

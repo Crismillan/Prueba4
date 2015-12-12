@@ -112,12 +112,12 @@ public class Panel_Mascota extends JPanel {
             String nom = txtNombre.getText();
             int Id_Raza= Integer.parseInt(txtId_Raza.getText());
             int peso= Integer.parseInt(txtPeso.getText());
-            int Mascota_id = Integer.parseInt(txtId_Mascota.getText());
+            
 
             mas.setNombre(nom);
             mas.setId_raza(Id_Raza);
             mas.setPeso(peso);
-            mas.setId_mascota(Mascota_id);
+            
             mas.save();
             Limpiar();
             llenarTabla();

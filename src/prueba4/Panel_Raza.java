@@ -100,10 +100,10 @@ public class Panel_Raza extends JPanel {
         public void actionPerformed(ActionEvent e) {
             Razas raza = new Razas();
             String nom = txtNombre.getText();
-            int Id_Raza= Integer.parseInt(txtId_Raza.getText());
+            
             
             raza.setNombre(nom);
-            raza.setId_raza(Id_Raza);
+           
             raza.save();
             Limpiar();
             llenarTabla();

@@ -43,7 +43,7 @@ public class Razas {
         this.con = con;
     }
     public void save() {
-        con.setEjecutar("insert into Razas(id_raza,nombre) values('" + this.id_raza + "','" + this.nombre + "')");
+        con.setEjecutar("insert into Razas(nombre) values('" + this.nombre + "')");
     }
     public void delete() {
         con.setEjecutar("delete from Razas where id_raza='" + this.id_raza + "'");
