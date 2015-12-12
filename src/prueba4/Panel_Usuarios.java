@@ -128,14 +128,14 @@ public class Panel_Usuarios extends JPanel {
         public void actionPerformed(ActionEvent e) {
             Usuarios usu = new Usuarios();
             String nom = txtNombre.getText();
-            int Id_Usu= Integer.parseInt(txtId_Usuarios.getText());
+            
             int rut= Integer.parseInt(txtRut.getText());
             String apeP = txtApellidoPAT.getText();
             String apeM = txtApellidoMAT.getText();
             int Mascota_id = Integer.parseInt(txtId_Mascota.getText());
             
             usu.setNombre(nom);
-            usu.setId_Usuario(Id_Usu);
+            
             usu.setRut(rut);
             usu.setApepat(apeP);
             usu.setApemat(apeM);

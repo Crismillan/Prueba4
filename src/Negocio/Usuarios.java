@@ -78,7 +78,11 @@ public class Usuarios {
     }
 
     public void save() {
-        con.setEjecutar("insert into usuarios(id_usuario,rut,nombre,apepat,apemat,id_mascota) values('" + this.id_usuario + "','" + this.rut + "','"+this.nombre+"','" + this.apepat + "','" + this.apemat + "','" + this.id_mascota + "')");
+        con.setEjecutar("insert into usuarios(rut,nombre,apepat,apemat,id_mascota) values('" + this.rut + "','"+this.nombre+"','" + this.apepat + "','" + this.apemat + "','" + this.id_mascota + "')");
+        
+        /*("insert into usuarios(id_usuario,rut,nombre,apepat,apemat,id_mascota) values('" + this.id_usuario + "','" + this.rut + "','"+this.nombre+"','" + this.apepat + "','" + this.apemat + "','" + this.id_mascota + "')");
+        */
+        
     }
 
     public void delete() {
@@ -89,8 +93,7 @@ public class Usuarios {
         con.setEjecutar("update usuarios set rut='" + this.rut + "', nombre='" + this.nombre + "',apepat='" + this.apepat + "',apemat='"+this.apemat+"' where  id_usuario='" + this.id_usuario + "'");
     }
 
-   
-    
+
     
     
 public List list(){
