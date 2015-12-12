@@ -117,7 +117,6 @@ public class Panel_Mascota extends JPanel {
             mas.setNombre(nom);
             mas.setId_raza(Id_Raza);
             mas.setPeso(peso);
-            
             mas.save();
             Limpiar();
             llenarTabla();
