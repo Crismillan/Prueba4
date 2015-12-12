@@ -49,7 +49,7 @@ public class Razas {
         con.setEjecutar("delete from Razas where id_raza='" + this.id_raza + "'");
     }
     public void update() {
-        con.setEjecutar("update Razas set id_raza='" + this.id_raza + "',nombre='" + this.nombre + "' where  id_raza='" + this.id_raza + "'");
+        con.setEjecutar("update Razas set nombre='" + this.nombre + "' where  id_raza='" + this.id_raza + "'");
     }
 
 public List list(){
